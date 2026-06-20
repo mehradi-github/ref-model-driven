@@ -81,7 +81,7 @@ Acceleo transforms IoT models into production-ready code.
 
 ```sh
 git clone https://github.com/mehradi-github/ref-model-driven.git
-cd ref-model-driven/api
+cd ./ref-model-driven/api
 
 docker-compose up --build -d
 
