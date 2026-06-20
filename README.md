@@ -1,6 +1,6 @@
-# IoT Sensor Network - Model-Driven Engineering Platform
+# IoT Sensor Network - Model-Driven Engineering
 
-This project demonstrates a complete **Model-Driven Engineering (MDE)** pipeline for IoT Sensor Networks:
+This project demonstrates a complete **Model-Driven Engineering (MDE)** pipeline for IoT Sensor Network Managment:
 
 1. **Metamodel Definition** - Ecore metamodel defining IoT concepts
 2. **Visual Modeling** - Sirius graphical editor for creating IoT configurations
@@ -9,7 +9,7 @@ This project demonstrates a complete **Model-Driven Engineering (MDE)** pipeline
 5. **Containerization** - Docker Compose for easy deployment
 
 
-- [IoT Sensor Network - Model-Driven Engineering Platform](#iot-sensor-network---model-driven-engineering-platform)
+- [IoT Sensor Network - Model-Driven Engineering](#iot-sensor-network---model-driven-engineering)
   - [Metamodel (M2)](#metamodel-m2)
   - [Sirius Graphical Modeling](#sirius-graphical-modeling)
   - [Acceleo Code Generation](#acceleo-code-generation)
