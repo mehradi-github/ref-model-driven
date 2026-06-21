@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   postgres:
-    image: postgres:latest
+    image: postgres:15-alpine
     restart: unless-stopped
     container_name: iot-sensor-postgres
     environment:
@@ -13,14 +13,16 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - ./generated-sql/generated-init-db.sql:/docker-entrypoint-initdb.d/init.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d iot_sensor"]
       interval: 10s
       timeout: 5s
       retries: 5
+      start_period: 10s
     networks:
       - iot-sensor-network
+
   adminer:
     image: adminer:latest
     container_name: iot-sensor-adminer
@@ -28,16 +30,21 @@ services:
     ports:
       - "8080:8080"
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy  # ← WAIT FOR POSTGRES TO BE READY
     networks:
       - iot-sensor-network
     environment:
       ADMINER_DEFAULT_SERVER: postgres
+      ADMINER_DEFAULT_DB: iot_sensor
+      ADMINER_DEFAULT_USER: postgres
+      ADMINER_DEFAULT_PASSWORD: postgres
     logging:
       driver: "json-file"
       options:
         max-size: "10m"
         max-file: "3"
+
   api:
     build:
       context: .
@@ -63,6 +70,7 @@ services:
 networks:
   iot-sensor-network:
     driver: bridge
+    name: iot-sensor-network
 
 volumes:
   postgres_data:
