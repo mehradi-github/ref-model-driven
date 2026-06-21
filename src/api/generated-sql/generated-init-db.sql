@@ -13,6 +13,18 @@ CREATE TABLE sensor_node (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE server (
+    id SERIAL PRIMARY KEY,
+    sensor_node_id INTEGER NOT NULL REFERENCES sensor_node(id) ON DELETE CASCADE,
+    name VARCHAR(100) NOT NULL,
+    cpu_frequency INTEGER,
+    ram_size INTEGER,
+    os VARCHAR(50),
+    type VARCHAR(20) NOT NULL CHECK (type IN ('Smartphone', 'PC', 'MainFrame', 'Cloud')),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT chk_server_specs CHECK (cpu_frequency > 0 AND ram_size > 0)
+);
+
 CREATE TABLE microcontroller_unit (
     id SERIAL PRIMARY KEY,
     sensor_node_id INTEGER NOT NULL REFERENCES sensor_node(id) ON DELETE CASCADE,
@@ -88,18 +100,6 @@ CREATE TABLE power_module (
     CONSTRAINT fk_power_server
         FOREIGN KEY (server_id) REFERENCES server(id) ON DELETE SET NULL,
     CONSTRAINT chk_current_draw CHECK (current_draw > 0)
-);
-
-CREATE TABLE server (
-    id SERIAL PRIMARY KEY,
-    sensor_node_id INTEGER NOT NULL REFERENCES sensor_node(id) ON DELETE CASCADE,
-    name VARCHAR(100) NOT NULL,
-    cpu_frequency INTEGER,
-    ram_size INTEGER,
-    os VARCHAR(50),
-    type VARCHAR(20) NOT NULL CHECK (type IN ('Smartphone', 'PC', 'MainFrame', 'Cloud')),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT chk_server_specs CHECK (cpu_frequency > 0 AND ram_size > 0)
 );
 
 CREATE TABLE server_communication (
