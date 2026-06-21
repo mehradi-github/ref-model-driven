@@ -1,0 +1,77 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    container_name: iot-sensor-postgres
+    environment:
+      POSTGRES_DB: iot_sensor
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./generated-sql/generated-init-db.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d iot_sensor"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - iot-sensor-network
+
+  adminer:
+    image: adminer:latest
+    container_name: iot-sensor-adminer
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy  # ← WAIT FOR POSTGRES TO BE READY
+    networks:
+      - iot-sensor-network
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres
+      ADMINER_DEFAULT_DB: iot_sensor
+      ADMINER_DEFAULT_USER: postgres
+      ADMINER_DEFAULT_PASSWORD: postgres
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: iot-sensor-api
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=postgres
+      - DB_PORT=5432
+      - DB_NAME=iot_sensor
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - PORT=3000
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - iot-sensor-network
+
+networks:
+  iot-sensor-network:
+    driver: bridge
+    name: iot-sensor-network
+
+volumes:
+  postgres_data:
+    driver: local
