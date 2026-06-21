@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sensornetwork:SensorNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:sensornetwork="http://www.example.org/sensornetwork" name="GreenSmartHome 1" samplingRate="10" location="Location 1 ">
+  <HasSensorModule SensorToMicrocontroller="//@HasMicrocontrollerUnit.0" unit="Celsius" minValue="10.0" maxValue="25.0" name="Sensor Temperature"/>
+  <HasActuatorModule ActuatorToMicrocontroller="//@HasMicrocontrollerUnit.0" command="Start" name="Actuator Thermostat"/>
+  <HasActuatorModule ActuatorToMicrocontroller="//@HasMicrocontrollerUnit.1" type="VALVE" command="START" name="VALVE 1"/>
+  <HasCommunicationModule CommunicationToMicrocontroller="//@HasMicrocontrollerUnit.0" type="GPRS" protocol="TCP" baudRate="120.0" buffer="64.0" macAddress="AD:12:25:15:CD" name="Module GPRS" CommunicationToServer="//@HasServer.0"/>
+  <HasCommunicationModule CommunicationToMicrocontroller="//@HasMicrocontrollerUnit.1" type="GPRS" protocol="UDP" baudRate="128.0" buffer="64.0" macAddress="AD:32:DF:BA:34" name="GPRS" CommunicationToServer="//@HasServer.0"/>
+  <HasPowerModule PowerToMicrocontroller="//@HasMicrocontrollerUnit.0" voltageRange="3.7" currentDraw="1.0" name="Battery 3.7 v"/>
+  <HasPowerModule PowerToMicrocontroller="//@HasMicrocontrollerUnit.1" voltageRange="3.7" currentDraw="1.0" name="Battery"/>
+  <HasMicrocontrollerUnit MicrocontrollerToSensor="//@HasSensorModule.0" MicrocontrollerToActuator="//@HasActuatorModule.0" MicrocontrollerToCommunication="//@HasCommunicationModule.0" MicrocontrollerToPower="//@HasPowerModule.0" firmware="Version 1" cpuFrequency="1024.0" ramSize="64.0" flashSize="128.0" name="ESP32 "/>
+  <HasMicrocontrollerUnit MicrocontrollerToActuator="//@HasActuatorModule.1" MicrocontrollerToCommunication="//@HasCommunicationModule.1" MicrocontrollerToPower="//@HasPowerModule.1" type="STM32" firmware="Version 1" cpuFrequency="1024.0" ramSize="128.0" flashSize="64.0" name="STM32"/>
+  <HasServer name="AWS VM 1" cpuFrequency="1024.0" ramSize="128.0" type="Cloud" ServerToCommunication="//@HasCommunicationModule.0 //@HasCommunicationModule.1"/>
+</sensornetwork:SensorNode>

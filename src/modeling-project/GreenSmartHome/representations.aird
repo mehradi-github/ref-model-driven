@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:sensornetwork="http://www.example.org/sensornetwork" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_f1rFgGv5EfGnXMf2mvsT9Q" selectedViews="_HXm-sGv6EfGMAs85b1W01g" version="15.4.3.202406261640">
+    <semanticResources>MyGreenSmartHome.sensornetwork</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_HXm-sGv6EfGMAs85b1W01g">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_V8AD4Gy4EfG7cvQB5Ns0Dg" name="new SmartHomeDiagram" repPath="#_V7wzUGy4EfG7cvQB5Ns0Dg" changeId="1781967598948">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']"/>
+        <target xmi:type="sensornetwork:SensorNode" href="MyGreenSmartHome.sensornetwork#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_V7wzUGy4EfG7cvQB5Ns0Dg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_V8PUcGy4EfG7cvQB5Ns0Dg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_V8PUcWy4EfG7cvQB5Ns0Dg" type="Sirius" element="_V7wzUGy4EfG7cvQB5Ns0Dg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_V-McQGy4EfG7cvQB5Ns0Dg" type="2001" element="_V8gaMGy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V-RUwGy4EfG7cvQB5Ns0Dg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_V-RUwWy4EfG7cvQB5Ns0Dg" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-sLgGy4EfG7cvQB5Ns0Dg" type="3005" element="_V8i2cGy4EfG7cvQB5Ns0Dg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_V-sLgWy4EfG7cvQB5Ns0Dg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-sLgmy4EfG7cvQB5Ns0Dg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_V-McQWy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-McQmy4EfG7cvQB5Ns0Dg" x="120" y="168" width="62" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_V-eJEGy4EfG7cvQB5Ns0Dg" type="2001" element="_V8mg0Gy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V-ewIGy4EfG7cvQB5Ns0Dg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_V-ewIWy4EfG7cvQB5Ns0Dg" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-sykGy4EfG7cvQB5Ns0Dg" type="3005" element="_V8nH4Gy4EfG7cvQB5Ns0Dg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_V-sykWy4EfG7cvQB5Ns0Dg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-sykmy4EfG7cvQB5Ns0Dg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_V-eJEWy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-eJEmy4EfG7cvQB5Ns0Dg" x="168" y="480" width="62" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_V-fXMGy4EfG7cvQB5Ns0Dg" type="2001" element="_V8nu8Gy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V-f-QGy4EfG7cvQB5Ns0Dg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_V-f-QWy4EfG7cvQB5Ns0Dg" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-syk2y4EfG7cvQB5Ns0Dg" type="3005" element="_V8nu8Wy4EfG7cvQB5Ns0Dg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_V-sylGy4EfG7cvQB5Ns0Dg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-sylWy4EfG7cvQB5Ns0Dg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_V-fXMWy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-fXMmy4EfG7cvQB5Ns0Dg" x="12" y="24" width="62" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_V-hzcGy4EfG7cvQB5Ns0Dg" type="2001" element="_V8oWAWy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V-iagGy4EfG7cvQB5Ns0Dg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_V-iagWy4EfG7cvQB5Ns0Dg" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-tZoGy4EfG7cvQB5Ns0Dg" type="3005" element="_V8oWAmy4EfG7cvQB5Ns0Dg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_V-tZoWy4EfG7cvQB5Ns0Dg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-tZomy4EfG7cvQB5Ns0Dg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_V-hzcWy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-hzcmy4EfG7cvQB5Ns0Dg" x="144" y="324" width="62" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_V-jBkGy4EfG7cvQB5Ns0Dg" type="2001" element="_V8o9EWy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V-jBk2y4EfG7cvQB5Ns0Dg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_V-jBlGy4EfG7cvQB5Ns0Dg" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-tZo2y4EfG7cvQB5Ns0Dg" type="3005" element="_V8pkIGy4EfG7cvQB5Ns0Dg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_V-tZpGy4EfG7cvQB5Ns0Dg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-tZpWy4EfG7cvQB5Ns0Dg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_V-jBkWy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-jBkmy4EfG7cvQB5Ns0Dg" x="552" y="108" width="62" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_V-k2wGy4EfG7cvQB5Ns0Dg" type="2001" element="_V8pkImy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V-k2w2y4EfG7cvQB5Ns0Dg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_V-k2xGy4EfG7cvQB5Ns0Dg" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-tZpmy4EfG7cvQB5Ns0Dg" type="3005" element="_V8qLMGy4EfG7cvQB5Ns0Dg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_V-uAsGy4EfG7cvQB5Ns0Dg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-uAsWy4EfG7cvQB5Ns0Dg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_V-k2wWy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-k2wmy4EfG7cvQB5Ns0Dg" x="576" y="408" width="62" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_V-mE4Gy4EfG7cvQB5Ns0Dg" type="2001" element="_V8qLMmy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V-mE42y4EfG7cvQB5Ns0Dg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_V-mE5Gy4EfG7cvQB5Ns0Dg" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-uAsmy4EfG7cvQB5Ns0Dg" type="3005" element="_V8qyQGy4EfG7cvQB5Ns0Dg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_V-uAs2y4EfG7cvQB5Ns0Dg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-uAtGy4EfG7cvQB5Ns0Dg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_V-mE4Wy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-mE4my4EfG7cvQB5Ns0Dg" x="396" y="228" width="62" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_V-nTAGy4EfG7cvQB5Ns0Dg" type="2001" element="_V8qyQmy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V-nTA2y4EfG7cvQB5Ns0Dg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_V-nTBGy4EfG7cvQB5Ns0Dg" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-unwGy4EfG7cvQB5Ns0Dg" type="3005" element="_V8rZUGy4EfG7cvQB5Ns0Dg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_V-unwWy4EfG7cvQB5Ns0Dg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-unwmy4EfG7cvQB5Ns0Dg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_V-nTAWy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-nTAmy4EfG7cvQB5Ns0Dg" x="288" y="48" width="62" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_V-ohIGy4EfG7cvQB5Ns0Dg" type="2001" element="_V8rZUmy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V-pIMGy4EfG7cvQB5Ns0Dg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_V-pIMWy4EfG7cvQB5Ns0Dg" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-unw2y4EfG7cvQB5Ns0Dg" type="3005" element="_V8sAYGy4EfG7cvQB5Ns0Dg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_V-unxGy4EfG7cvQB5Ns0Dg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-unxWy4EfG7cvQB5Ns0Dg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_V-ohIWy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="10" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-ohImy4EfG7cvQB5Ns0Dg" x="349" y="372" width="62" height="61"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_V-pvQGy4EfG7cvQB5Ns0Dg" type="2001" element="_V8sncGy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V-qWUGy4EfG7cvQB5Ns0Dg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_V-qWUWy4EfG7cvQB5Ns0Dg" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-unxmy4EfG7cvQB5Ns0Dg" type="3005" element="_V8sncWy4EfG7cvQB5Ns0Dg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_V-unx2y4EfG7cvQB5Ns0Dg" fontName="Cantarell"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-unyGy4EfG7cvQB5Ns0Dg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_V-pvQWy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="12" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-pvQmy4EfG7cvQB5Ns0Dg" x="732" y="312" width="62" height="61"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_V8PUcmy4EfG7cvQB5Ns0Dg"/>
+        <edges xmi:type="notation:Edge" xmi:id="_V-3KoGy4EfG7cvQB5Ns0Dg" type="4001" element="_V9128Gy4EfG7cvQB5Ns0Dg" source="_V-mE4Gy4EfG7cvQB5Ns0Dg" target="_V-nTAGy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V-3xsGy4EfG7cvQB5Ns0Dg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-3xsWy4EfG7cvQB5Ns0Dg" x="7" y="6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-4YwGy4EfG7cvQB5Ns0Dg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-4_0Gy4EfG7cvQB5Ns0Dg" x="-6" y="-7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-4_0Wy4EfG7cvQB5Ns0Dg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-4_0my4EfG7cvQB5Ns0Dg" x="-5" y="-5"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_V-3KoWy4EfG7cvQB5Ns0Dg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_V-3Komy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V-3Ko2y4EfG7cvQB5Ns0Dg" points="[0, 0, 108, 96]$[-128, -141, -20, -45]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V-94UGy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V-94UWy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,1.3770491803278688)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_V-94Umy4EfG7cvQB5Ns0Dg" type="4001" element="_V946QGy4EfG7cvQB5Ns0Dg" source="_V-McQGy4EfG7cvQB5Ns0Dg" target="_V-nTAGy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V--fYGy4EfG7cvQB5Ns0Dg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V--fYWy4EfG7cvQB5Ns0Dg" x="-2" y="-13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V--fYmy4EfG7cvQB5Ns0Dg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V--fY2y4EfG7cvQB5Ns0Dg" x="-2" y="4"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V--fZGy4EfG7cvQB5Ns0Dg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V--fZWy4EfG7cvQB5Ns0Dg" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_V-94U2y4EfG7cvQB5Ns0Dg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_V-94VGy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V-94VWy4EfG7cvQB5Ns0Dg" points="[0, 0, -168, 36]$[149, -76, -19, -40]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V-_GcGy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V-_GcWy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,1.3770491803278688)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_V-_Gcmy4EfG7cvQB5Ns0Dg" type="4001" element="_V95hUGy4EfG7cvQB5Ns0Dg" source="_V-eJEGy4EfG7cvQB5Ns0Dg" target="_V-ohIGy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V-_Gdmy4EfG7cvQB5Ns0Dg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-_Gd2y4EfG7cvQB5Ns0Dg" x="2" y="1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-_tgGy4EfG7cvQB5Ns0Dg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-_tgWy4EfG7cvQB5Ns0Dg" x="-9" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V-_tgmy4EfG7cvQB5Ns0Dg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V-_tg2y4EfG7cvQB5Ns0Dg" x="-11" y="-8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_V-_Gc2y4EfG7cvQB5Ns0Dg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_V-_GdGy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V-_GdWy4EfG7cvQB5Ns0Dg" points="[0, 0, -181, 24]$[149, -73, -32, -49]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V-_thGy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V-_thWy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,1.3770491803278688)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_V-_thmy4EfG7cvQB5Ns0Dg" type="4001" element="_V96vcGy4EfG7cvQB5Ns0Dg" source="_V-jBkGy4EfG7cvQB5Ns0Dg" target="_V-nTAGy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V_AUkGy4EfG7cvQB5Ns0Dg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_AUkWy4EfG7cvQB5Ns0Dg" x="21" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_AUkmy4EfG7cvQB5Ns0Dg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_AUk2y4EfG7cvQB5Ns0Dg" x="-2" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_AUlGy4EfG7cvQB5Ns0Dg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_AUlWy4EfG7cvQB5Ns0Dg" x="-7" y="11"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_V-_th2y4EfG7cvQB5Ns0Dg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_V-_tiGy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V-_tiWy4EfG7cvQB5Ns0Dg" points="[-42, 3, 222, -21]$[-248, -22, 16, -46]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_A7oGy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_A7oWy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,1.3770491803278688)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_V_A7omy4EfG7cvQB5Ns0Dg" type="4001" element="_V97WhGy4EfG7cvQB5Ns0Dg" source="_V-k2wGy4EfG7cvQB5Ns0Dg" target="_V-ohIGy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V_BisGy4EfG7cvQB5Ns0Dg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_BisWy4EfG7cvQB5Ns0Dg" x="8" y="12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_Bismy4EfG7cvQB5Ns0Dg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_Bis2y4EfG7cvQB5Ns0Dg" y="-2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_BitGy4EfG7cvQB5Ns0Dg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_BitWy4EfG7cvQB5Ns0Dg" x="1" y="2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_V_A7o2y4EfG7cvQB5Ns0Dg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_V_A7pGy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V_A7pWy4EfG7cvQB5Ns0Dg" points="[-42, 8, 185, -40]$[-217, -10, 10, -58]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_CJwGy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_CJwWy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,1.3770491803278688)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_V_CJwmy4EfG7cvQB5Ns0Dg" type="4001" element="_V99LsGy4EfG7cvQB5Ns0Dg" source="_V-fXMGy4EfG7cvQB5Ns0Dg" target="_V-nTAGy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V_CJxmy4EfG7cvQB5Ns0Dg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_CJx2y4EfG7cvQB5Ns0Dg" x="-11" y="-9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_CJyGy4EfG7cvQB5Ns0Dg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_CJyWy4EfG7cvQB5Ns0Dg" x="9" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_CJymy4EfG7cvQB5Ns0Dg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_CJy2y4EfG7cvQB5Ns0Dg" x="6" y="3"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_V_CJw2y4EfG7cvQB5Ns0Dg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_V_CJxGy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V_CJxWy4EfG7cvQB5Ns0Dg" points="[42, 16, -234, -92]$[276, 108, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_Cw0Gy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_Cw0Wy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,1.3770491803278688)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_V_Cw0my4EfG7cvQB5Ns0Dg" type="4001" element="_V99ywGy4EfG7cvQB5Ns0Dg" source="_V-hzcGy4EfG7cvQB5Ns0Dg" target="_V-ohIGy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V_Cw1my4EfG7cvQB5Ns0Dg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_Cw12y4EfG7cvQB5Ns0Dg" x="-26" y="-6"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_DX4Gy4EfG7cvQB5Ns0Dg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_DX4Wy4EfG7cvQB5Ns0Dg" x="15" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_DX4my4EfG7cvQB5Ns0Dg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_DX42y4EfG7cvQB5Ns0Dg" x="14" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_V_Cw02y4EfG7cvQB5Ns0Dg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_V_Cw1Gy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V_Cw1Wy4EfG7cvQB5Ns0Dg" points="[20, 12, -185, -120]$[169, 109, -36, -23]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_DX5Gy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_DX5Wy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,1.3770491803278688)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_V_D-8Gy4EfG7cvQB5Ns0Dg" type="4001" element="_V9_A4Gy4EfG7cvQB5Ns0Dg" source="_V-jBkGy4EfG7cvQB5Ns0Dg" target="_V-pvQGy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V_D-9Gy4EfG7cvQB5Ns0Dg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_D-9Wy4EfG7cvQB5Ns0Dg" x="-37" y="2"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_D-9my4EfG7cvQB5Ns0Dg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_D-92y4EfG7cvQB5Ns0Dg" x="15" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_D--Gy4EfG7cvQB5Ns0Dg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_D--Wy4EfG7cvQB5Ns0Dg" x="27" y="4"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_V_D-8Wy4EfG7cvQB5Ns0Dg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_V_D-8my4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V_D-82y4EfG7cvQB5Ns0Dg" points="[20, 32, -160, -256]$[165, 265, -15, -23]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_EmAGy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_EmAWy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,1.3770491803278688)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_V_EmAmy4EfG7cvQB5Ns0Dg" type="4001" element="_V9_n9Gy4EfG7cvQB5Ns0Dg" source="_V-k2wGy4EfG7cvQB5Ns0Dg" target="_V-pvQGy4EfG7cvQB5Ns0Dg">
+          <children xmi:type="notation:Node" xmi:id="_V_EmBmy4EfG7cvQB5Ns0Dg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_EmB2y4EfG7cvQB5Ns0Dg" x="5" y="-11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_EmCGy4EfG7cvQB5Ns0Dg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_EmCWy4EfG7cvQB5Ns0Dg" x="-5" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_V_FNEGy4EfG7cvQB5Ns0Dg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_V_FNEWy4EfG7cvQB5Ns0Dg" x="-5" y="9"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_V_EmA2y4EfG7cvQB5Ns0Dg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_V_EmBGy4EfG7cvQB5Ns0Dg" fontName="Cantarell" fontHeight="12"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_V_EmBWy4EfG7cvQB5Ns0Dg" points="[0, 0, -156, 12]$[118, -61, -38, -49]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_FNEmy4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_V_FNE2y4EfG7cvQB5Ns0Dg" id="(0.6774193548387096,1.3770491803278688)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_V-A2EGy4EfG7cvQB5Ns0Dg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_V-A2EWy4EfG7cvQB5Ns0Dg"/>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_V8gaMGy4EfG7cvQB5Ns0Dg" name="Actuator Thermostat" outgoingEdges="_V946QGy4EfG7cvQB5Ns0Dg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sensornetwork:ActuatorModule" href="MyGreenSmartHome.sensornetwork#//@HasActuatorModule.0"/>
+      <semanticElements xmi:type="sensornetwork:ActuatorModule" href="MyGreenSmartHome.sensornetwork#//@HasActuatorModule.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_V8i2cGy4EfG7cvQB5Ns0Dg" labelSize="10" workspacePath="/SmartHome.project.design/icons/ActuatorModule.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='ActuatorModule']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='ActuatorModule']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_V8mg0Gy4EfG7cvQB5Ns0Dg" name="VALVE 1" outgoingEdges="_V95hUGy4EfG7cvQB5Ns0Dg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sensornetwork:ActuatorModule" href="MyGreenSmartHome.sensornetwork#//@HasActuatorModule.1"/>
+      <semanticElements xmi:type="sensornetwork:ActuatorModule" href="MyGreenSmartHome.sensornetwork#//@HasActuatorModule.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_V8nH4Gy4EfG7cvQB5Ns0Dg" labelSize="10" workspacePath="/SmartHome.project.design/icons/ActuatorModule.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='ActuatorModule']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='ActuatorModule']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_V8nu8Gy4EfG7cvQB5Ns0Dg" name="Battery 3.7 v" outgoingEdges="_V99LsGy4EfG7cvQB5Ns0Dg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sensornetwork:PowerModule" href="MyGreenSmartHome.sensornetwork#//@HasPowerModule.0"/>
+      <semanticElements xmi:type="sensornetwork:PowerModule" href="MyGreenSmartHome.sensornetwork#//@HasPowerModule.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_V8nu8Wy4EfG7cvQB5Ns0Dg" labelSize="10" workspacePath="/SmartHome.project.design/icons/PowerMoudule.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='PowerModule']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='PowerModule']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_V8oWAWy4EfG7cvQB5Ns0Dg" name="Battery" outgoingEdges="_V99ywGy4EfG7cvQB5Ns0Dg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sensornetwork:PowerModule" href="MyGreenSmartHome.sensornetwork#//@HasPowerModule.1"/>
+      <semanticElements xmi:type="sensornetwork:PowerModule" href="MyGreenSmartHome.sensornetwork#//@HasPowerModule.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_V8oWAmy4EfG7cvQB5Ns0Dg" labelSize="10" workspacePath="/SmartHome.project.design/icons/PowerMoudule.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='PowerModule']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='PowerModule']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_V8o9EWy4EfG7cvQB5Ns0Dg" name="Module GPRS" outgoingEdges="_V96vcGy4EfG7cvQB5Ns0Dg _V9_A4Gy4EfG7cvQB5Ns0Dg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sensornetwork:CommunicationModule" href="MyGreenSmartHome.sensornetwork#//@HasCommunicationModule.0"/>
+      <semanticElements xmi:type="sensornetwork:CommunicationModule" href="MyGreenSmartHome.sensornetwork#//@HasCommunicationModule.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_V8pkIGy4EfG7cvQB5Ns0Dg" labelSize="10" workspacePath="/SmartHome.project.design/icons/CommunicationModule.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='CommunicationModule']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='CommunicationModule']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_V8pkImy4EfG7cvQB5Ns0Dg" name="GPRS" outgoingEdges="_V97WhGy4EfG7cvQB5Ns0Dg _V9_n9Gy4EfG7cvQB5Ns0Dg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sensornetwork:CommunicationModule" href="MyGreenSmartHome.sensornetwork#//@HasCommunicationModule.1"/>
+      <semanticElements xmi:type="sensornetwork:CommunicationModule" href="MyGreenSmartHome.sensornetwork#//@HasCommunicationModule.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_V8qLMGy4EfG7cvQB5Ns0Dg" labelSize="10" workspacePath="/SmartHome.project.design/icons/CommunicationModule.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='CommunicationModule']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='CommunicationModule']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_V8qLMmy4EfG7cvQB5Ns0Dg" name="Sensor Temperature" outgoingEdges="_V9128Gy4EfG7cvQB5Ns0Dg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sensornetwork:SensorModule" href="MyGreenSmartHome.sensornetwork#//@HasSensorModule.0"/>
+      <semanticElements xmi:type="sensornetwork:SensorModule" href="MyGreenSmartHome.sensornetwork#//@HasSensorModule.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_V8qyQGy4EfG7cvQB5Ns0Dg" labelSize="10" workspacePath="/SmartHome.project.design/icons/SensorModule.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='SensorModule']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='SensorModule']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_V8qyQmy4EfG7cvQB5Ns0Dg" name="ESP32 " incomingEdges="_V9128Gy4EfG7cvQB5Ns0Dg _V946QGy4EfG7cvQB5Ns0Dg _V96vcGy4EfG7cvQB5Ns0Dg _V99LsGy4EfG7cvQB5Ns0Dg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sensornetwork:MicrocontrollerUnit" href="MyGreenSmartHome.sensornetwork#//@HasMicrocontrollerUnit.0"/>
+      <semanticElements xmi:type="sensornetwork:MicrocontrollerUnit" href="MyGreenSmartHome.sensornetwork#//@HasMicrocontrollerUnit.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_V8rZUGy4EfG7cvQB5Ns0Dg" labelSize="10" workspacePath="/SmartHome.project.design/icons/MicrocontrollerUnit.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_V8rZUmy4EfG7cvQB5Ns0Dg" name="STM32" incomingEdges="_V95hUGy4EfG7cvQB5Ns0Dg _V97WhGy4EfG7cvQB5Ns0Dg _V99ywGy4EfG7cvQB5Ns0Dg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sensornetwork:MicrocontrollerUnit" href="MyGreenSmartHome.sensornetwork#//@HasMicrocontrollerUnit.1"/>
+      <semanticElements xmi:type="sensornetwork:MicrocontrollerUnit" href="MyGreenSmartHome.sensornetwork#//@HasMicrocontrollerUnit.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_V8sAYGy4EfG7cvQB5Ns0Dg" labelSize="10" workspacePath="/SmartHome.project.design/icons/MicrocontrollerUnit.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_V8sncGy4EfG7cvQB5Ns0Dg" name="AWS VM 1" incomingEdges="_V9_A4Gy4EfG7cvQB5Ns0Dg _V9_n9Gy4EfG7cvQB5Ns0Dg" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="sensornetwork:Server" href="MyGreenSmartHome.sensornetwork#//@HasServer.0"/>
+      <semanticElements xmi:type="sensornetwork:Server" href="MyGreenSmartHome.sensornetwork#//@HasServer.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" uid="_V8sncWy4EfG7cvQB5Ns0Dg" labelSize="12" workspacePath="/SmartHome.project.design/icons/Server.png">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='ServerNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='ServerNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_V9128Gy4EfG7cvQB5Ns0Dg" sourceNode="_V8qLMmy4EfG7cvQB5Ns0Dg" targetNode="_V8qyQmy4EfG7cvQB5Ns0Dg">
+      <target xmi:type="sensornetwork:SensorModule" href="MyGreenSmartHome.sensornetwork#//@HasSensorModule.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_V92eAGy4EfG7cvQB5Ns0Dg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='SensorToMicrocontroller']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_V92eAWy4EfG7cvQB5Ns0Dg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='SensorToMicrocontroller']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_V946QGy4EfG7cvQB5Ns0Dg" sourceNode="_V8gaMGy4EfG7cvQB5Ns0Dg" targetNode="_V8qyQmy4EfG7cvQB5Ns0Dg">
+      <target xmi:type="sensornetwork:ActuatorModule" href="MyGreenSmartHome.sensornetwork#//@HasActuatorModule.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_V946QWy4EfG7cvQB5Ns0Dg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='ActuatorToMicrocontroller']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_V946Qmy4EfG7cvQB5Ns0Dg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='ActuatorToMicrocontroller']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_V95hUGy4EfG7cvQB5Ns0Dg" sourceNode="_V8mg0Gy4EfG7cvQB5Ns0Dg" targetNode="_V8rZUmy4EfG7cvQB5Ns0Dg">
+      <target xmi:type="sensornetwork:ActuatorModule" href="MyGreenSmartHome.sensornetwork#//@HasActuatorModule.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_V95hUWy4EfG7cvQB5Ns0Dg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='ActuatorToMicrocontroller']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_V95hUmy4EfG7cvQB5Ns0Dg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='ActuatorToMicrocontroller']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_V96vcGy4EfG7cvQB5Ns0Dg" sourceNode="_V8o9EWy4EfG7cvQB5Ns0Dg" targetNode="_V8qyQmy4EfG7cvQB5Ns0Dg">
+      <target xmi:type="sensornetwork:CommunicationModule" href="MyGreenSmartHome.sensornetwork#//@HasCommunicationModule.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_V97WgGy4EfG7cvQB5Ns0Dg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='CommunicationToMicrocontroller']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_V97WgWy4EfG7cvQB5Ns0Dg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='CommunicationToMicrocontroller']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_V97WhGy4EfG7cvQB5Ns0Dg" sourceNode="_V8pkImy4EfG7cvQB5Ns0Dg" targetNode="_V8rZUmy4EfG7cvQB5Ns0Dg">
+      <target xmi:type="sensornetwork:CommunicationModule" href="MyGreenSmartHome.sensornetwork#//@HasCommunicationModule.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_V97WhWy4EfG7cvQB5Ns0Dg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='CommunicationToMicrocontroller']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_V97Whmy4EfG7cvQB5Ns0Dg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='CommunicationToMicrocontroller']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_V99LsGy4EfG7cvQB5Ns0Dg" sourceNode="_V8nu8Gy4EfG7cvQB5Ns0Dg" targetNode="_V8qyQmy4EfG7cvQB5Ns0Dg">
+      <target xmi:type="sensornetwork:PowerModule" href="MyGreenSmartHome.sensornetwork#//@HasPowerModule.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_V99LsWy4EfG7cvQB5Ns0Dg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='PowerToMicrocontroller']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_V99Lsmy4EfG7cvQB5Ns0Dg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='PowerToMicrocontroller']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_V99ywGy4EfG7cvQB5Ns0Dg" sourceNode="_V8oWAWy4EfG7cvQB5Ns0Dg" targetNode="_V8rZUmy4EfG7cvQB5Ns0Dg">
+      <target xmi:type="sensornetwork:PowerModule" href="MyGreenSmartHome.sensornetwork#//@HasPowerModule.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_V99ywWy4EfG7cvQB5Ns0Dg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='PowerToMicrocontroller']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_V99ywmy4EfG7cvQB5Ns0Dg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='PowerToMicrocontroller']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_V9_A4Gy4EfG7cvQB5Ns0Dg" sourceNode="_V8o9EWy4EfG7cvQB5Ns0Dg" targetNode="_V8sncGy4EfG7cvQB5Ns0Dg">
+      <target xmi:type="sensornetwork:CommunicationModule" href="MyGreenSmartHome.sensornetwork#//@HasCommunicationModule.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_V9_n8Gy4EfG7cvQB5Ns0Dg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='CommunicationToServer']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_V9_n8Wy4EfG7cvQB5Ns0Dg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='CommunicationToServer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_V9_n9Gy4EfG7cvQB5Ns0Dg" sourceNode="_V8pkImy4EfG7cvQB5Ns0Dg" targetNode="_V8sncGy4EfG7cvQB5Ns0Dg">
+      <target xmi:type="sensornetwork:CommunicationModule" href="MyGreenSmartHome.sensornetwork#//@HasCommunicationModule.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_V-APAGy4EfG7cvQB5Ns0Dg" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='CommunicationToServer']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_V-APAWy4EfG7cvQB5Ns0Dg" labelSize="12"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@edgeMappings[name='CommunicationToServer']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_V7258Gy4EfG7cvQB5Ns0Dg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/SmartHome.project.design/description/project.odesign#//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer"/>
+    <target xmi:type="sensornetwork:SensorNode" href="MyGreenSmartHome.sensornetwork#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
