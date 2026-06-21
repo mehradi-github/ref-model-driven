@@ -13,5 +13,5 @@ COPY . .
 
 EXPOSE 3000
 
-USER node  # Security: run as non-root
-CMD ["node", "start"]
+# USER node  # Security: run as non-root
+CMD ["npm", "start"]

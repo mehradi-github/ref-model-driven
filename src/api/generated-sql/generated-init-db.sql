@@ -210,7 +210,7 @@ INSERT INTO server (
      1024.0,
      128.0,   
      '',
-     'Cloude')
+     'Cloud')
 ;
 
 
@@ -293,17 +293,28 @@ WHERE sensor_node_id = (SELECT id FROM sensor_node WHERE name = 'GreenSmartHome 
   AND name = 'GPRS';
 
 
-INSERT INTO server_communication (server_id, communication_id)
-VALUES (
-    (SELECT id FROM server 
-     WHERE sensor_node_id = (SELECT id FROM sensor_node WHERE name = 'GreenSmartHome 1') 
-       AND name = 'AWS VM 1'),
-    (SELECT id FROM communication_module 
-     WHERE sensor_node_id = (SELECT id FROM sensor_node WHERE name = 'GreenSmartHome 1') 
-       AND name = 'Module GPRSGPRS')
-);
-
-
+    -- Link Server 'AWS VM 1' → Communication 'Module GPRS'
+    INSERT INTO server_communication (server_id, communication_id)
+    VALUES (
+        (SELECT id FROM server 
+         WHERE sensor_node_id = (SELECT id FROM sensor_node WHERE name = 'GreenSmartHome 1')
+           AND name = 'AWS VM 1'),
+        (SELECT id FROM communication_module 
+         WHERE sensor_node_id = (SELECT id FROM sensor_node WHERE name = 'GreenSmartHome 1')
+           AND name = 'Module GPRS')
+    )
+    ON CONFLICT (server_id, communication_id) DO NOTHING;
+    -- Link Server 'AWS VM 1' → Communication 'GPRS'
+    INSERT INTO server_communication (server_id, communication_id)
+    VALUES (
+        (SELECT id FROM server 
+         WHERE sensor_node_id = (SELECT id FROM sensor_node WHERE name = 'GreenSmartHome 1')
+           AND name = 'AWS VM 1'),
+        (SELECT id FROM communication_module 
+         WHERE sensor_node_id = (SELECT id FROM sensor_node WHERE name = 'GreenSmartHome 1')
+           AND name = 'GPRS')
+    )
+    ON CONFLICT (server_id, communication_id) DO NOTHING;
 
 
 CREATE OR REPLACE VIEW sensor_node_full AS

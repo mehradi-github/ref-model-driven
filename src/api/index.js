@@ -27,7 +27,7 @@ const pool = new Pool({
 // Test DB Connection
 pool.query('SELECT NOW()', (err) => {
   if (err) console.error('Database connection error', err);
-  else console.log('✅ Connected to PostgreSQL (iot_sensor schema)');
+  else console.log('Connected to PostgreSQL (iot_sensor schema)');
 });
 
 // ====================== GENERIC CRUD HELPER ======================
@@ -164,10 +164,10 @@ app.get('/functions/active-modules/:nodeName', async (req, res) => {
 app.get('/', (req, res) => {
   res.json({ 
     message: 'IoT Sensor REST API is running!',
-    endpoints: 'Visit /api/sensor-nodes, /api/sensor-modules, etc.'
+    endpoints: 'Visit /api/sensor-node, /api/sensor-node/1, /api/sensor-module, /api/sensor-module/1, etc.'
   });
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
