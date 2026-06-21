@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="project" version="15.4.0.202401051836">
+  <ownedViewpoints name="MySmartHome">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="SmartHomeDiagram" domainClass="sensornetwork::SensorNode" enablePopupBars="true">
+      <metamodel href="http://www.example.org/sensornetwork#/"/>
+      <defaultLayer name="SmartHome">
+        <nodeMappings name="ActuatorModule" semanticCandidatesExpression="feature:HasActuatorModule" domainClass="sensornetwork::ActuatorModule">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="10" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/SmartHome.project.design/icons/ActuatorModule.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="PowerModule" semanticCandidatesExpression="feature:HasPowerModule" domainClass="sensornetwork::PowerModule">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="10" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/SmartHome.project.design/icons/PowerMoudule.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="CommunicationModule" semanticCandidatesExpression="feature:HasCommunicationModule" domainClass="sensornetwork::CommunicationModule">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="10" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/SmartHome.project.design/icons/CommunicationModule.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="SensorModule" semanticCandidatesExpression="feature:HasSensorModule" domainClass="sensornetwork::SensorModule">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="10" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/SmartHome.project.design/icons/SensorModule.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="MicrocontrollerUnit" semanticCandidatesExpression="feature:HasMicrocontrollerUnit" domainClass="sensornetwork::MicrocontrollerUnit">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="10" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/SmartHome.project.design/icons/MicrocontrollerUnit.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <nodeMappings name="ServerNode" semanticCandidatesExpression="feature:HasServer" domainClass="sensornetwork::Server">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="12" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/SmartHome.project.design/icons/Server.png">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelFormat>bold</labelFormat>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+        <edgeMappings name="SensorToMicrocontroller" sourceMapping="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='SensorModule'] //@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit']" targetMapping="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit'] //@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='SensorModule']" targetFinderExpression="aql:self.SensorToMicrocontroller">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="ActuatorToMicrocontroller" sourceMapping="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit'] //@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='ActuatorModule']" targetMapping="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit'] //@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='ActuatorModule']" targetFinderExpression="aql:self.ActuatorToMicrocontroller">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="CommunicationToMicrocontroller" sourceMapping="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='CommunicationModule'] //@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit']" targetMapping="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='CommunicationModule'] //@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit']" targetFinderExpression="aql:self.CommunicationToMicrocontroller">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="PowerToMicrocontroller" sourceMapping="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit'] //@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='PowerModule']" targetMapping="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit'] //@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='PowerModule']" targetFinderExpression="aql:self.PowerToMicrocontroller">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <edgeMappings name="CommunicationToServer" sourceMapping="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='CommunicationModule'] //@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='ServerNode']" targetMapping="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='CommunicationModule'] //@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='ServerNode']" targetFinderExpression="aql:self.CommunicationToServer">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription labelSize="12">
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <toolSections name="Tools">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Microcontroller" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='MicrocontrollerUnit']" iconPath="/SmartHome.project.design/icons/MicrocontrollerUnit.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="sensornetwork::MicrocontrollerUnit" referenceName="HasMicrocontrollerUnit"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Server" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='ServerNode']" iconPath="/SmartHome.project.design/icons/Server.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="sensornetwork::Server" referenceName="HasServer"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Sensor" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='SensorModule']" iconPath="/SmartHome.project.design/icons/SensorModule.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" referenceName="HasSensorModule"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Actuator" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='ActuatorModule']" iconPath="/SmartHome.project.design/icons/ActuatorModule.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="sensornetwork::ActuatorModule" referenceName="HasActuatorModule"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Power" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='PowerModule']" iconPath="/SmartHome.project.design/icons/PowerMoudule.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="sensornetwork::PowerMoudule" referenceName="HasPowerManagmentModule"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Communication" forceRefresh="true" nodeMappings="//@ownedViewpoints[name='MySmartHome']/@ownedRepresentations[name='SmartHomeDiagram']/@defaultLayer/@nodeMappings[name='CommunicationModule']" iconPath="/SmartHome.project.design/icons/CommunicationModule.png">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="sensornetwork::CommunicationModule" referenceName="HasCommunicationModule"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="SmartHome.project.design.Services"/>
+  </ownedViewpoints>
+</description:Group>
