@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/iot.sensornetwork/src-gen" creationIcons="false"
+    editDirectory="/iot.sensornetwork.edit/src-gen" editorDirectory="/iot.sensornetwork.editor/src-gen"
+    modelPluginID="iot.sensornetwork" modelName="Sensornetwork" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="21.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>sensornetwork.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Sensornetwork" basePackage="iot" disposableProviderFactory="true"
+      ecorePackage="sensornetwork.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sensornetwork.ecore#//SensorType">
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//SensorType/TEMPERATURE"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//SensorType/HUMIDITY"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//SensorType/PRESSURE"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//SensorType/CO2"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//SensorType/MOTION"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//SensorType/LIGHT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sensornetwork.ecore#//ActuatorType">
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//ActuatorType/THERMOSTAT"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//ActuatorType/RELAY"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//ActuatorType/ALARM"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//ActuatorType/SERVO"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//ActuatorType/VALVE"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//ActuatorType/LED"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sensornetwork.ecore#//MicrocontrollerunitType">
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//MicrocontrollerunitType/ESP32"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//MicrocontrollerunitType/STM32"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//MicrocontrollerunitType/ARDUINO"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//MicrocontrollerunitType/ARM"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//MicrocontrollerunitType/AVR"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sensornetwork.ecore#//CommunicationType">
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//CommunicationType/BLUETOOTH"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//CommunicationType/WIFI"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//CommunicationType/GPRS"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//CommunicationType/FIVEG"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//CommunicationType/SATELLITE"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sensornetwork.ecore#//PowerType">
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//PowerType/BATTERYLITHIUM"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//PowerType/WIREDAC"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//PowerType/WIRELESS"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//PowerType/UPS"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="sensornetwork.ecore#//ServerType">
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//ServerType/Smartphone"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//ServerType/PC"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//ServerType/MainFrame"/>
+      <genEnumLiterals ecoreEnumLiteral="sensornetwork.ecore#//ServerType/Cloud"/>
+    </genEnums>
+    <genClasses ecoreClass="sensornetwork.ecore#//SensorNode">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//SensorNode/HasSensorModule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//SensorNode/HasActuatorModule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//SensorNode/HasCommunicationModule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//SensorNode/HasPowerModule"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//SensorNode/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//SensorNode/samplingRate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//SensorNode/location"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//SensorNode/HasMicrocontrollerUnit"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//SensorNode/HasServer"/>
+    </genClasses>
+    <genClasses ecoreClass="sensornetwork.ecore#//SensorModule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//SensorModule/SensorToMicrocontroller"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//SensorModule/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//SensorModule/unit"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//SensorModule/minValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//SensorModule/maxValue"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//SensorModule/name"/>
+    </genClasses>
+    <genClasses ecoreClass="sensornetwork.ecore#//ActuatorModule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//ActuatorModule/ActuatorToMicrocontroller"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//ActuatorModule/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//ActuatorModule/command"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//ActuatorModule/name"/>
+    </genClasses>
+    <genClasses ecoreClass="sensornetwork.ecore#//MicrocontrollerUnit">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//MicrocontrollerUnit/MicrocontrollerToSensor"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//MicrocontrollerUnit/MicrocontrollerToActuator"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//MicrocontrollerUnit/MicrocontrollerToCommunication"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//MicrocontrollerUnit/MicrocontrollerToPower"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//MicrocontrollerUnit/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//MicrocontrollerUnit/firmware"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//MicrocontrollerUnit/cpuFrequency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//MicrocontrollerUnit/ramSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//MicrocontrollerUnit/flashSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//MicrocontrollerUnit/name"/>
+    </genClasses>
+    <genClasses ecoreClass="sensornetwork.ecore#//PowerModule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//PowerModule/PowerToMicrocontroller"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//PowerModule/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//PowerModule/voltageRange"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//PowerModule/currentDraw"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//PowerModule/name"/>
+    </genClasses>
+    <genClasses ecoreClass="sensornetwork.ecore#//CommunicationModule">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//CommunicationModule/CommunicationToMicrocontroller"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//CommunicationModule/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//CommunicationModule/protocol"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//CommunicationModule/baudRate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//CommunicationModule/buffer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//CommunicationModule/macAddress"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//CommunicationModule/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//CommunicationModule/CommunicationToServer"/>
+    </genClasses>
+    <genClasses ecoreClass="sensornetwork.ecore#//Server">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//Server/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//Server/cpuFrequency"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//Server/ramSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//Server/OS"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sensornetwork.ecore#//Server/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//Server/ServerToCommunication"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference sensornetwork.ecore#//Server/ServerToPower"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
