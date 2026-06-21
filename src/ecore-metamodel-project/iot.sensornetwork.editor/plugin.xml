@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated sensornetwork -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="iot.sensornetwork.presentation.SensornetworkModelWizardID"
+            name="%_UI_SensornetworkModelWizard_label"
+            class="iot.sensornetwork.presentation.SensornetworkModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SensornetworkModelFile.gif">
+         <description>%_UI_SensornetworkModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated sensornetwork -->
+      <editor
+            id="iot.sensornetwork.presentation.SensornetworkEditorID"
+            name="%_UI_SensornetworkEditor_label"
+            icon="icons/full/obj16/SensornetworkModelFile.gif"
+            extensions="sensornetwork"
+            class="iot.sensornetwork.presentation.SensornetworkEditor"
+            contributorClass="iot.sensornetwork.presentation.SensornetworkActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="sensornetwork" nsURI="http://www.example.org/sensornetwork"
+    nsPrefix="sensornetwork">
+  <eClassifiers xsi:type="ecore:EClass" name="SensorNode">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="HasSensorModule" lowerBound="1"
+        upperBound="-1" eType="#//SensorModule" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="HasActuatorModule" lowerBound="1"
+        upperBound="-1" eType="#//ActuatorModule" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="HasCommunicationModule"
+        lowerBound="1" upperBound="-1" eType="#//CommunicationModule" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="HasPowerModule" lowerBound="1"
+        upperBound="-1" eType="#//PowerModule" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="samplingRate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="location" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="HasMicrocontrollerUnit"
+        lowerBound="1" upperBound="-1" eType="#//MicrocontrollerUnit" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="HasServer" upperBound="-1"
+        eType="#//Server" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SensorModule">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="SensorToMicrocontroller"
+        lowerBound="1" eType="#//MicrocontrollerUnit" eOpposite="#//MicrocontrollerUnit/MicrocontrollerToSensor"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//SensorType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="unit" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="minValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDouble"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ActuatorModule">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ActuatorToMicrocontroller"
+        lowerBound="1" eType="#//MicrocontrollerUnit" eOpposite="#//MicrocontrollerUnit/MicrocontrollerToActuator"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//ActuatorType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="command" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MicrocontrollerUnit">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="MicrocontrollerToSensor"
+        lowerBound="1" eType="#//SensorModule" eOpposite="#//SensorModule/SensorToMicrocontroller"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="MicrocontrollerToActuator"
+        lowerBound="1" eType="#//ActuatorModule" eOpposite="#//ActuatorModule/ActuatorToMicrocontroller"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="MicrocontrollerToCommunication"
+        lowerBound="1" eType="#//CommunicationModule" eOpposite="#//CommunicationModule/CommunicationToMicrocontroller"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="MicrocontrollerToPower"
+        lowerBound="1" eType="#//PowerModule" eOpposite="#//PowerModule/PowerToMicrocontroller"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//MicrocontrollerunitType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="firmware" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cpuFrequency" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ramSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="flashSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SensorType">
+    <eLiterals name="TEMPERATURE"/>
+    <eLiterals name="HUMIDITY" value="1" literal="HUMIDITY"/>
+    <eLiterals name="PRESSURE" value="2"/>
+    <eLiterals name="CO2" value="3" literal="CO2"/>
+    <eLiterals name="MOTION" value="4" literal="MOTION"/>
+    <eLiterals name="LIGHT" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ActuatorType">
+    <eLiterals name="THERMOSTAT" literal="THERMOSTAT"/>
+    <eLiterals name="RELAY" value="2" literal="RELAY"/>
+    <eLiterals name="ALARM" value="3" literal="ALARM"/>
+    <eLiterals name="SERVO" value="4" literal="SERVO"/>
+    <eLiterals name="VALVE" value="5" literal="VALVE"/>
+    <eLiterals name="LED" value="6" literal="LED"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PowerModule">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="PowerToMicrocontroller"
+        lowerBound="1" eType="#//MicrocontrollerUnit" eOpposite="#//MicrocontrollerUnit/MicrocontrollerToPower"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//PowerType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="voltageRange" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="currentDraw" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CommunicationModule">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CommunicationToMicrocontroller"
+        lowerBound="1" eType="#//MicrocontrollerUnit" eOpposite="#//MicrocontrollerUnit/MicrocontrollerToCommunication"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//CommunicationType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="protocol" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="baudRate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="buffer" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="macAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CommunicationToServer"
+        upperBound="-1" eType="#//Server" eOpposite="#//Server/ServerToCommunication"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="MicrocontrollerunitType">
+    <eLiterals name="ESP32" literal="ESP32"/>
+    <eLiterals name="STM32" value="1" literal="STM32"/>
+    <eLiterals name="ARDUINO" value="2" literal="ARDUINO"/>
+    <eLiterals name="ARM" value="3" literal="ARM"/>
+    <eLiterals name="AVR" value="4" literal="AVR"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="CommunicationType">
+    <eLiterals name="BLUETOOTH"/>
+    <eLiterals name="WIFI" value="1" literal="WIFI"/>
+    <eLiterals name="GPRS" value="2"/>
+    <eLiterals name="FIVEG" value="3" literal="FiVEG"/>
+    <eLiterals name="SATELLITE" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PowerType">
+    <eLiterals name="BATTERYLITHIUM"/>
+    <eLiterals name="WIREDAC" value="1"/>
+    <eLiterals name="WIRELESS" value="2" literal="WIRELESS"/>
+    <eLiterals name="UPS" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Server">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cpuFrequency" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ramSize" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="OS" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//ServerType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ServerToCommunication"
+        upperBound="-1" eType="#//CommunicationModule" eOpposite="#//CommunicationModule/CommunicationToServer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ServerToPower" eType="#//PowerModule"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ServerType">
+    <eLiterals name="Smartphone"/>
+    <eLiterals name="PC" value="1"/>
+    <eLiterals name="MainFrame" value="2"/>
+    <eLiterals name="Cloud" value="3" literal="Cloud"/>
+  </eClassifiers>
+</ecore:EPackage>
