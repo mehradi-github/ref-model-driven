@@ -58,24 +58,24 @@ Acceleo transforms IoT models into production-ready code.
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `/api/v1/nodes` | Get all sensor nodes |
-| `GET` | `/api/v1/nodes/:id` | Get node by ID |
-| `GET` | `/api/v1/nodes/name/:name` | Get node by name |
-| `GET` | `/api/v1/nodes/summary/:name` | Get node summary |
-| `POST` | `/api/v1/nodes` | Create sensor node |
-| `PUT` | `/api/v1/nodes/:id` | Update sensor node |
-| `DELETE` | `/api/v1/nodes/:id` | Delete sensor node |
+| `GET` | `/api/v1/node` | Get all sensor nodes |
+| `GET` | `/api/v1/node/:id` | Get node by ID |
+| `GET` | `/api/v1/node/name/:name` | Get node by name |
+| `GET` | `/api/v1/node/summary/:name` | Get node summary |
+| `POST` | `/api/v1/node` | Create sensor node |
+| `PUT` | `/api/v1/node/:id` | Update sensor node |
+| `DELETE` | `/api/v1/node/:id` | Delete sensor node |
 
 #### Modules
 
 | Entity | Endpoint Pattern |
 |--------|------------------|
-| **Sensors** | `/api/v1/sensors` |
-| **Actuators** | `/api/v1/actuators` |
-| **Microcontrollers** | `/api/v1/microcontrollers` |
-| **Communications** | `/api/v1/communications` |
-| **Powers** | `/api/v1/powers` |
-| **Servers** | `/api/v1/servers` |
+| **Sensors** | `/api/v1/sensor` |
+| **Actuators** | `/api/v1/actuator` |
+| **Microcontrollers** | `/api/v1/microcontroller` |
+| **Communications** | `/api/v1/communication` |
+| **Powers** | `/api/v1/power` |
+| **Servers** | `/api/v1/server` |
 
 #### How to Use
 
@@ -115,3 +115,8 @@ curl -X POST http://localhost:3000/api/v1/nodes \
 
 
 ```
+<!-- 
+# Tutorial
+
+[![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID) -->
+
