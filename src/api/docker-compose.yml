@@ -2,9 +2,9 @@ version: '3.9'
 
 services:
   postgres:
-    image: postgres:16-alpine
-    container_name: iot-sensor-postgres
+    image: postgres:latest
     restart: unless-stopped
+    container_name: iot-sensor-postgres
     environment:
       POSTGRES_DB: iot_sensor
       POSTGRES_USER: postgres
@@ -20,8 +20,24 @@ services:
       timeout: 5s
       retries: 5
     networks:
-      - iot-network
-
+      - iot-sensor-network
+  adminer:
+    image: adminer:latest
+    container_name: iot-sensor-adminer
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    networks:
+      - iot-sensor-network
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
   api:
     build:
       context: .
@@ -42,10 +58,10 @@ services:
       postgres:
         condition: service_healthy
     networks:
-      - iot-network
+      - iot-sensor-network
 
 networks:
-  iot-network:
+  iot-sensor-network:
     driver: bridge
 
 volumes:
