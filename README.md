@@ -19,6 +19,7 @@ This project demonstrates a complete **Model-Driven Engineering (MDE)** pipeline
       - [Sensor Nodes](#sensor-nodes)
       - [Modules](#modules)
       - [How to Use](#how-to-use)
+- [Tutorial](#tutorial)
 
 
 ## Metamodel (M2)
@@ -115,8 +116,8 @@ curl -X POST http://localhost:3000/api/v1/nodes \
 
 
 ```
-<!-- 
+
 # Tutorial
 
-[![Watch the demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID) -->
+[![Watch the demo](https://img.youtube.com/vi/xiTGXcL9FD0/maxresdefault.jpg)](https://www.youtube.com/watch?v=xiTGXcL9FD0) 
 
