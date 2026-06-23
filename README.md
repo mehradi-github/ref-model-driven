@@ -119,5 +119,4 @@ curl -X POST http://localhost:3000/api/v1/nodes \
 
 # Tutorial
 
-[![Watch the demo](https://img.youtube.com/vi/xiTGXcL9FD0/maxresdefault.jpg)](https://www.youtube.com/watch?v=xiTGXcL9FD0) 
-
+[![watch on YouTube](./src/images/youtube.png)](https://www.youtube.com/watch?v=xiTGXcL9FD0)
